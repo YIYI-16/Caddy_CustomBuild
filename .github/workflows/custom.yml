@@ -356,7 +356,7 @@ jobs:
 
       - name: Upload to Artifacts
         if: env.iscustom == 'true' && success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Caddy-${{ env.GOOS }}-${{ env.GOARCH }}-${{ env.version }}-${{ env.release_tag }}
           path: |
